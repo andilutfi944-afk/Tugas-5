@@ -13,3 +13,7 @@ void masukanData(double &berat, double &tinggi) {
 }
 
 // Fungsi untuk menghitung BMI
+double hitungBMI(double berat, double tinggi) {
+    return berat / (tinggi * tinggi);
+}
+
