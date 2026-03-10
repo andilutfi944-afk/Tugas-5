@@ -29,3 +29,24 @@ string cekKondisi(double bmi) {
         return "Obesitas";
     }
 }
+
+int main() {
+    double berat, tinggi, bmi;
+
+
+    // Memanggil prosedur input
+    masukanData(berat, tinggi);
+
+
+    // Memanggil fungsi hitung
+    bmi = hitungBMI(berat, tinggi);
+
+
+    // Menampilkan hasil sesuai format gambar
+    cout << endl << "--- Hasil ---" << endl;
+    cout << "BMI Anda : " << bmi << endl;
+    cout << "Status   : " << cekKondisi(bmi) << endl;
+
+
+    return 0;
+}
