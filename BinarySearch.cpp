@@ -9,7 +9,32 @@ void input()
 {
     while (true)
     {
-        cout << "Masukkan banyak element array (maksimal 10): ";
+        cout << "Masukkan banyaknya elemen pada array (maksimal10) : ";
         cin >> nPanjang;
+
+        if (nPanjang <= 10)
+        {
+            break;
+        }
+        else
+        {
+            cout << "\n[!] Jumlah elemen tidak boleh lebih dari 10. Silahkan coba lagi.\n";
+        }
+
     }
+
+        cout << "\n===========================================\n";
+        cout << "           Masukkan Elemen Array           \n";
+        cout << "===========================================\n";
+
+        for (int i = 0; i < nPanjang; i++)
+        {
+            cout << "Data ke-" << (i + 1) << " = ";
+            cin >> element[i];
+        }
+}
+
+void bubbleSortArray()
+{
+    
 }
